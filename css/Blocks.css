@@ -1,0 +1,106 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar-con ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #f1f1f1;
+}
+
+.navbar-con li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.blocks_label {
+     width: 15em;
+  /* border: 1px solid #333; */
+  /* box-shadow: 8px 8px 5px #444; */
+  padding-top: 20px;
+  padding-left: 200px;
+}
+
+.gallery-container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border-radius: 10px;
+    text-align: center;
+    position: relative; /* 为了定位按钮 */
+}
+
+.gallery-container h1 {
+    margin: 20px;
+    /* margin-bottom: 100px; */
+    position:static;
+}
+
+.gallery-wrapper {
+    overflow-x: hidden; /* 隐藏滚动条 */
+    white-space: nowrap; /* 防止内容自动换行 */
+    width: 100%;
+    position: relative;
+}
+
+.gallery {
+    display: inline-flex; /* 使子元素横向排列 */
+    transition: transform 0.3s ease; /* 添加平滑过渡效果 */
+    gap: 20px;
+}
+
+.item {
+    width: 200px; /* 设置固定宽度 */
+    margin: 10px;
+    padding: 10px;
+    background-color: #e0e0e0;
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    display: inline-block; /* 使项目保持在同一行 */
+    vertical-align: top; /* 保持垂直对齐 */
+}
+
+.item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.item p {
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.scroll-button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+.scroll-button.left {
+    left: -50px;
+}
+
+.scroll-button.right {
+    right: -50px;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}

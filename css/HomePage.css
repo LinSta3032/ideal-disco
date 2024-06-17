@@ -1,0 +1,17 @@
+.content{
+    font-size:50px;
+    color:#555;
+    font-weight:bold;
+}
+.font-content{
+    position:absolute;
+    width:700px;
+    height:700px;
+    margin:20px;
+    text-align:center;
+    line-height:700px;
+    left:50%;
+    top:50%;
+    transform: translate3d(-50%,-50%,0);
+    /* border:2px solid red; */
+}
